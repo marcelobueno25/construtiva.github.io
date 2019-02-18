@@ -1,0 +1,107 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 20px;
+  background-color: black;
+  position: fixed;
+  z-index: 5;
+}
+.navbar .logo-principal {
+  font-size: 1.2em;
+}
+.navbar .logo-principal .logo {
+  color: white;
+  font-style: none;
+  text-decoration: none;
+  font-weight: 600;
+}
+.navbar .active-menu {
+  color: white;
+  font-size: 1.1em;
+}
+.navbar .active-menu .menu {
+  color: #9f9f9f;
+  font-style: none;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 5px;
+  transition: 0.6s;
+}
+.navbar .active-menu .menu:hover {
+  color: white;
+}
+.navbar .active-menu .menu .fa-bars {
+  padding: 0 5px;
+}
+
+.industrious_banner {
+  width: 100%;
+  height: 650px;
+  background-image: url(../img/cidade.jpg);
+  background-size: cover;
+}
+.industrious_banner .industrious {
+  background-image: linear-gradient(to bottom right, rgba(203, 27, 40, 0.6) 0%, rgba(17, 17, 17, 0.9) 74%);
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+.industrious_banner .industrious .industrious-title {
+  text-transform: uppercase;
+  font-size: 5em;
+  font-weight: normal;
+  padding: 30px 0;
+}
+.industrious_banner .industrious .industrious-subtitle {
+  font-size: 1.7em;
+  font-weight: normal;
+  color: #9f9f9f;
+}
+
+.turpis_banner {
+  background-image: url(../img/parede_e_vidro.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.turpis_banner .turpis {
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  text-align: center;
+  color: #55555A;
+}
+.turpis_banner .turpis .turpis-title {
+  font-size: 2em;
+  padding: 50px 0 30px 0;
+  font-weight: normal;
+}
+.turpis_banner .turpis .turpis-paragraph {
+  padding-bottom: 50px;
+}
+
+.box-option {
+  box-shadow: 1px 1px 8px #e5e5e5;
+  background-color: white;
+  margin: 20px auto;
+  box-sizing: content-box;
+}
+.box-option .option-icon {
+  font-size: 4.5em;
+  color: #CE1B28;
+  padding: 25px 0;
+}
+.box-option .option-subtitle {
+  font-weight: normal;
+}
+.box-option .option-paragraph {
+  padding: 25px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
