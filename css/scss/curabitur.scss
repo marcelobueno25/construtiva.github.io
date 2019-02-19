@@ -1,8 +1,10 @@
 .curabitur {
   background-attachment: fixed;
   background-image: url(../img/predio.jpg);
-  background-position: center;
+  background-position: bottom;
   width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .curabitur-filtro {
     background-color: rgba(255, 0, 0, .2);

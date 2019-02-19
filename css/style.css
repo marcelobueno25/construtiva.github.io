@@ -73,6 +73,7 @@
 .turpis .turpis-filtro {
   background-color: rgba(255, 255, 255, 0.95);
   text-align: center;
+  padding: 80px 0;
 }
 .turpis .turpis-filtro .turpis-titulo {
   font-size: 2.2em;
@@ -109,8 +110,10 @@
 .curabitur {
   background-attachment: fixed;
   background-image: url(../img/predio.jpg);
-  background-position: center;
+  background-position: bottom;
   width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .curabitur .curabitur-filtro {
   background-color: rgba(255, 0, 0, 0.2);
@@ -133,6 +136,66 @@
 .curabitur .curabitur-filtro .curabitur-texts .curabitur-paragrafo {
   font-size: 1em;
   padding: 40px 0;
+}
+
+.faucibus {
+  background-attachment: fixed;
+  background-image: url(../img/parede_e_vidro.jpg);
+  background-size: cover;
+}
+.faucibus .faucibus-filtro {
+  background-color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 80px;
+}
+.faucibus .faucibus-filtro .faucibus-subtitulo {
+  font-size: 2.2em;
+  font-weight: normal;
+  padding-top: 60px;
+}
+.faucibus .faucibus-filtro .faucibus-paragrafo {
+  font-size: 1em;
+  padding: 40px 0;
+}
+
+.faucibus-lista-avaliacao {
+  justify-content: space-between;
+}
+.faucibus-lista-avaliacao .faucibus-avaliacao {
+  background-color: white;
+  box-sizing: content-box;
+  box-shadow: 1px 1px 8px #e5e5e5;
+  margin: 20px 0;
+  padding: 40px 25px;
+  position: relative;
+}
+.faucibus-lista-avaliacao .faucibus-avaliacao .faucibus-avaliacao-text {
+  border-left: 7px;
+  border-color: #bfbfbf;
+  border-style: solid;
+  padding: 20px 0 20px 20px;
+  margin: 20px 0;
+  text-align: left;
+}
+.faucibus-lista-avaliacao .faucibus-avaliacao .faucibus-avaliacao-text .faucibus-avaliacao-paragrafo {
+  font-style: italic;
+  font-size: 1.05em;
+}
+.faucibus-lista-avaliacao .faucibus-avaliacao .faucibus-avaliacao-pessoa {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.faucibus-lista-avaliacao .faucibus-avaliacao .faucibus-avaliacao-pessoa .faucibus-pessoa-imagem {
+  height: 65px;
+  border-radius: 50%;
+}
+.faucibus-lista-avaliacao .faucibus-avaliacao .faucibus-avaliacao-pessoa .faucibus-pessoa-paragrafo {
+  font-size: 0.875em;
+}
+.faucibus-lista-avaliacao .faucibus-avaliacao .faucibus-avaliacao-pessoa .faucibus-pessoa-paragrafo .faucibus-pessoa-paragrafo-destaque {
+  font-weight: 600;
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
