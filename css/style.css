@@ -59,6 +59,7 @@
 }
 .industrious .industrious-filtro .industrious-subtitulo .industrious-templated {
   text-transform: uppercase;
+  cursor: pointer;
 }
 .industrious .industrious-filtro .industrious-subtitulo .industrious-templated:hover {
   color: white;
@@ -196,6 +197,16 @@
 .faucibus-lista-avaliacao .faucibus-avaliacao .faucibus-avaliacao-pessoa .faucibus-pessoa-paragrafo .faucibus-pessoa-paragrafo-destaque {
   font-weight: 600;
   color: red;
+}
+
+.rotape {
+  background-color: #111111;
+  padding: 50px 0;
+}
+.rotape .rotape-lista .rotape-item .rotape-subtitulo {
+  font-weight: 500;
+  font-size: 1.3em;
+  padding: 20px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
