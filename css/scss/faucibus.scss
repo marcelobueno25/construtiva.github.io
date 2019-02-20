@@ -15,7 +15,7 @@
     }
     .faucibus-paragrafo {
       font-size: 1em;
-      padding: 40px 0;
+      padding: 40px 0 60px 0;
     }
   }
 }
@@ -25,10 +25,9 @@
 
   .faucibus-avaliacao {
     background-color: white;
-    box-sizing: content-box;
     box-shadow: 1px 1px 8px #e5e5e5;
+    padding: 50px 50px;
     margin: 20px 0;
-    padding: 40px 25px;
     position: relative;
 
     .faucibus-avaliacao-text {
@@ -46,20 +45,20 @@
     }
 
     .faucibus-avaliacao-pessoa {
-      display: flex;
       align-items: center;
+      display: flex;
       justify-content: space-evenly;
 
       .faucibus-pessoa-imagem {
-        height: 65px;
         border-radius: 50%;
+        height: 55px;
       }
       .faucibus-pessoa-paragrafo {
-        font-size: 0.875em;
+        font-size: 0.8em;
 
         .faucibus-pessoa-paragrafo-destaque {
+          color: #c10000;
           font-weight: 600;
-          color: red;
         }
       }
     }

@@ -37,3 +37,43 @@
         }
     }
 }
+
+
+.ativa {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #111111;
+  width: 300px;
+  height: 100vw;
+  padding: 20px 20px;
+
+  .ativa-x {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.1em;
+    text-align: right;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .ativa-lista-links {
+    font-size: .9em;
+
+    .ativa-link {
+      padding: 20px 0;
+      border-bottom: 1px;
+      border-color: #383838;
+      border-style: solid;
+
+      .ativa-link-texto {
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -23,12 +23,11 @@
 .lista-de-vantagem {
   justify-content: space-between;
 
-  .vantagem {
+  .vantagem-item {
       background-color: white;
-      box-sizing: content-box;
       box-shadow: 1px 1px 8px #e5e5e5;
       margin: 20px 0;
-      padding: 70px 25px;
+      padding: 50px 40px;
 
       .vantagem-icone {
         color: #CE1B28;
