@@ -12,68 +12,64 @@
     z-index: 4;
     width: 100%;
 
-    .navbar-logo-principal {
-        .navbar-logo {
-            color: white;
-
-            font-weight: 600;
-        }
+    .navbar-logo {
+      color: white;
+      font-weight: 600;
     }
 
-    .navbar-menu-ativa {
-        color: #9f9f9f;
+    .navbar-menu {
+      cursor: pointer;
+      font-weight: 600;
+    }
 
-        .navbar-menu {
-            font-weight: bold;
-            transition: 0.5s;
+    .sidebar-lista-links {
+      .sidebar-link {
+        padding: 20px 0px;
+        border-bottom: 1px;
+        border-color: #444444;
+        border-style: solid;
 
-            &:hover {
-              color: white;
-            }
-
-            .fa-bars {
-              padding: 0 10px;
-            }
+        &:last-child {
+          border: 0;
         }
+
+        .sidebar-link-texto {
+          &:hover {
+            color: white;
+            transition: .5s;
+          }
+        }
+      }
     }
 }
 
 
-.ativa {
-  position: absolute;
+.sidebar {
+  position: fixed;
   top: 0;
   right: 0;
   background-color: #111111;
   width: 300px;
-  height: 100vw;
+  height: 100%;
   padding: 20px 20px;
+  transition: 1s ease-in-out;
 
-  .ativa-x {
+  .btn-close {
     display: flex;
     justify-content: flex-end;
-    font-size: 1.1em;
-    text-align: right;
 
-    &:hover {
-      color: white;
+    .btn-close-icon {
+      cursor: pointer;
+      font-size: 1.2em;
+
+      &:hover {
+        color: white;
+        transition: .5s;
+      }
     }
   }
 
-  .ativa-lista-links {
-    font-size: .9em;
-
-    .ativa-link {
-      padding: 20px 0;
-      border-bottom: 1px;
-      border-color: #383838;
-      border-style: solid;
-
-      .ativa-link-texto {
-
-        &:hover {
-          color: white;
-        }
-      }
-    }
+  &.closed {
+    right: -300px;
   }
 }

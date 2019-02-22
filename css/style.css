@@ -11,59 +11,58 @@
   z-index: 4;
   width: 100%;
 }
-.navbar .navbar-logo-principal .navbar-logo {
+.navbar .navbar-logo {
   color: white;
   font-weight: 600;
 }
-.navbar .navbar-menu-ativa {
-  color: #9f9f9f;
+.navbar .navbar-menu {
+  cursor: pointer;
+  font-weight: 600;
 }
-.navbar .navbar-menu-ativa .navbar-menu {
-  font-weight: bold;
+.navbar .sidebar-lista-links .sidebar-link {
+  padding: 20px 0px;
+  border-bottom: 1px;
+  border-color: #444444;
+  border-style: solid;
+}
+.navbar .sidebar-lista-links .sidebar-link:last-child {
+  border: 0;
+}
+.navbar .sidebar-lista-links .sidebar-link .sidebar-link-texto:hover {
+  color: white;
   transition: 0.5s;
 }
-.navbar .navbar-menu-ativa .navbar-menu:hover {
-  color: white;
-}
-.navbar .navbar-menu-ativa .navbar-menu .fa-bars {
-  padding: 0 10px;
-}
 
-.ativa {
-  position: absolute;
+.sidebar {
+  position: fixed;
   top: 0;
   right: 0;
   background-color: #111111;
   width: 300px;
-  height: 100vw;
+  height: 100%;
   padding: 20px 20px;
+  transition: 1s ease-in-out;
 }
-.ativa .ativa-x {
+.sidebar .btn-close {
   display: flex;
   justify-content: flex-end;
-  font-size: 1.1em;
-  text-align: right;
 }
-.ativa .ativa-x:hover {
+.sidebar .btn-close .btn-close-icon {
+  cursor: pointer;
+  font-size: 1.2em;
+}
+.sidebar .btn-close .btn-close-icon:hover {
   color: white;
+  transition: 0.5s;
 }
-.ativa .ativa-lista-links {
-  font-size: 0.9em;
-}
-.ativa .ativa-lista-links .ativa-link {
-  padding: 20px 0;
-  border-bottom: 1px;
-  border-color: #383838;
-  border-style: solid;
-}
-.ativa .ativa-lista-links .ativa-link .ativa-link-texto:hover {
-  color: white;
+.sidebar.closed {
+  right: -300px;
 }
 
 .industrious {
   background-image: url(../img/cidade.jpg);
   background-size: cover;
-  height: 650px;
+  height: 550px;
   width: 100%;
 }
 .industrious .industrious-filtro {
@@ -71,6 +70,7 @@
   color: white;
   display: flex;
   flex-direction: column;
+  font-family: Raleway Light;
   height: 100%;
   justify-content: center;
   text-align: center;
@@ -85,8 +85,9 @@
 .industrious .industrious-filtro .industrious-subtitulo {
   color: #9f9f9f;
   font-size: 1.4em;
-  font-weight: normal;
+  font-weight: 600;
   line-height: 1.5em;
+  padding: 0 15px;
 }
 .industrious .industrious-filtro .industrious-subtitulo .industrious-templated {
   text-transform: uppercase;
@@ -150,7 +151,7 @@
   background-color: rgba(255, 0, 0, 0.2);
   color: white;
   height: 100%;
-  padding: 70px 0;
+  padding: 10px 0;
   width: 100%;
 }
 .curabitur .curabitur-filtro .curabitur-texts {
@@ -159,11 +160,13 @@
   flex-direction: column;
   line-height: 1.5em;
   text-align: center;
+  padding: 0 15px;
 }
 .curabitur .curabitur-filtro .curabitur-texts .curabitur-subtitulo {
   font-size: 2.2em;
   font-weight: normal;
   padding-top: 60px;
+  line-height: 1.3em;
 }
 .curabitur .curabitur-filtro .curabitur-texts .curabitur-paragrafo {
   font-size: 1em;
