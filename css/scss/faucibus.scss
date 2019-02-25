@@ -1,41 +1,43 @@
+@import './variaveis.scss';
+@import './mixin.scss';
+
 .faucibus {
   background-attachment: fixed;
   background-image: url(../img/parede_e_vidro.jpg);
   background-size: cover;
 
   .faucibus-filtro {
-    background-color: rgba(255, 255, 255, .95);
+    background-color: rgba($cor-branco, .95);
+    padding: 20px 0;
     text-align: center;
-    padding: 80px;
 
     .faucibus-subtitulo {
-      font-size: 2.2em;
-      font-weight: normal;
-      padding-top: 60px;
+      @include subtitulo;
     }
+
     .faucibus-paragrafo {
-      font-size: 1em;
-      padding: 40px 0 60px 0;
+      @include paragrafo;
     }
   }
 }
 
 .faucibus-lista-avaliacao {
   justify-content: space-between;
+  padding: 0 20px 50px 20px;
 
   .faucibus-avaliacao {
-    background-color: white;
-    box-shadow: 1px 1px 8px #e5e5e5;
-    padding: 50px 50px;
+    background-color: $cor-branco;
+    box-shadow: 1px 1px 8px $cor-branco-escuro;
     margin: 20px 0;
+    padding: 50px 50px;
     position: relative;
 
     .faucibus-avaliacao-text {
       border-left: 7px;
-      border-color: #bfbfbf;
+      border-color: $cor-cinza;
       border-style: solid;
-      padding: 20px 0 20px 20px;
       margin: 20px 0;
+      padding: 20px 0 20px 20px;
       text-align: left;
 
       .faucibus-avaliacao-paragrafo {
@@ -57,7 +59,7 @@
         font-size: 0.8em;
 
         .faucibus-pessoa-paragrafo-destaque {
-          color: #c10000;
+          color: $cor-red-escuro;
           font-weight: 600;
         }
       }

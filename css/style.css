@@ -1,6 +1,6 @@
 .navbar {
   align-items: center;
-  background-color: black;
+  background-color: #111111;
   display: flex;
   font-size: 1em;
   font-style: none;
@@ -18,30 +18,36 @@
 .navbar .navbar-menu {
   cursor: pointer;
   font-weight: 600;
+  transition: 0.5s;
+}
+.navbar .navbar-menu:hover {
+  color: white;
 }
 .navbar .sidebar-lista-links .sidebar-link {
-  padding: 20px 0px;
   border-bottom: 1px;
-  border-color: #444444;
+  border-color: #868686;
   border-style: solid;
+  padding: 20px 0px;
 }
 .navbar .sidebar-lista-links .sidebar-link:last-child {
   border: 0;
 }
+.navbar .sidebar-lista-links .sidebar-link .sidebar-link-texto {
+  transition: 0.5s;
+}
 .navbar .sidebar-lista-links .sidebar-link .sidebar-link-texto:hover {
   color: white;
-  transition: 0.5s;
 }
 
 .sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #111111;
-  width: 300px;
+  background-color: black;
   height: 100%;
   padding: 20px 20px;
+  position: fixed;
+  top: 0;
   transition: 1s ease-in-out;
+  right: 0;
+  width: 300px;
 }
 .sidebar .btn-close {
   display: flex;
@@ -90,8 +96,8 @@
   padding: 0 15px;
 }
 .industrious .industrious-filtro .industrious-subtitulo .industrious-templated {
-  text-transform: uppercase;
   cursor: pointer;
+  text-transform: uppercase;
 }
 .industrious .industrious-filtro .industrious-subtitulo .industrious-templated:hover {
   color: white;
@@ -105,21 +111,23 @@
 }
 .turpis .turpis-filtro {
   background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px 0;
   text-align: center;
-  padding: 80px 0;
 }
-.turpis .turpis-filtro .turpis-titulo {
+.turpis .turpis-filtro .turpis-subtitulo {
   font-size: 2.2em;
   font-weight: normal;
-  padding-top: 60px;
+  padding: 60px 20px 0 20px;
+  text-transform: uppercase;
 }
 .turpis .turpis-filtro .turpis-paragrafo {
   font-size: 1em;
-  padding: 40px 0;
+  padding: 30px 20px 50px 20px;
 }
 
 .lista-de-vantagem {
   justify-content: space-between;
+  padding: 0 20px;
 }
 .lista-de-vantagem .vantagem-item {
   background-color: white;
@@ -128,12 +136,13 @@
   padding: 50px 40px;
 }
 .lista-de-vantagem .vantagem-item .vantagem-icone {
-  color: #CE1B28;
+  color: #c10000;
   font-size: 4.5em;
   padding: 25px 0;
 }
 .lista-de-vantagem .vantagem-item .vantagem-subtitulo {
   font-weight: normal;
+  text-transform: uppercase;
 }
 .lista-de-vantagem .vantagem-item .vantagem-paragrafo {
   padding: 25px 0;
@@ -159,14 +168,15 @@
   display: flex;
   flex-direction: column;
   line-height: 1.5em;
-  text-align: center;
   padding: 0 15px;
+  text-align: center;
 }
 .curabitur .curabitur-filtro .curabitur-texts .curabitur-subtitulo {
   font-size: 2.2em;
   font-weight: normal;
-  padding-top: 60px;
   line-height: 1.3em;
+  padding-top: 60px;
+  text-transform: uppercase;
 }
 .curabitur .curabitur-filtro .curabitur-texts .curabitur-paragrafo {
   font-size: 1em;
@@ -180,35 +190,37 @@
 }
 .faucibus .faucibus-filtro {
   background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px 0;
   text-align: center;
-  padding: 80px;
 }
 .faucibus .faucibus-filtro .faucibus-subtitulo {
   font-size: 2.2em;
   font-weight: normal;
-  padding-top: 60px;
+  padding: 60px 20px 0 20px;
+  text-transform: uppercase;
 }
 .faucibus .faucibus-filtro .faucibus-paragrafo {
   font-size: 1em;
-  padding: 40px 0 60px 0;
+  padding: 30px 20px 50px 20px;
 }
 
 .faucibus-lista-avaliacao {
   justify-content: space-between;
+  padding: 0 20px 50px 20px;
 }
 .faucibus-lista-avaliacao .faucibus-avaliacao {
   background-color: white;
   box-shadow: 1px 1px 8px #e5e5e5;
-  padding: 50px 50px;
   margin: 20px 0;
+  padding: 50px 50px;
   position: relative;
 }
 .faucibus-lista-avaliacao .faucibus-avaliacao .faucibus-avaliacao-text {
   border-left: 7px;
   border-color: #bfbfbf;
   border-style: solid;
-  padding: 20px 0 20px 20px;
   margin: 20px 0;
+  padding: 20px 0 20px 20px;
   text-align: left;
 }
 .faucibus-lista-avaliacao .faucibus-avaliacao .faucibus-avaliacao-text .faucibus-avaliacao-paragrafo {
@@ -234,7 +246,7 @@
 
 .rotape {
   background-color: #111111;
-  padding: 50px 0;
+  padding: 50px 20px;
 }
 .rotape .rotape-lista {
   border-bottom: 1px;
@@ -253,9 +265,9 @@
   text-transform: uppercase;
 }
 .rotape .rotape-copyright {
-  text-align: center;
-  padding: 25px 0;
   font-size: 0.9em;
+  padding: 25px 0;
+  text-align: center;
 }
 
 .rotape-lista-links .rotape-link {

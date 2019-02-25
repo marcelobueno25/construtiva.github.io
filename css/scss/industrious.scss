@@ -1,3 +1,6 @@
+@import './variaveis.scss';
+
+
 .industrious {
   background-image: url(../img/cidade.jpg);
   background-size: cover;
@@ -5,8 +8,8 @@
   width: 100%;
 
     .industrious-filtro {
-      background-image: linear-gradient(to bottom right, rgba(203,27,40,.6) 0%, rgba(17,17,17,.9) 64%);
-      color: white;
+      background-image: linear-gradient(to bottom right, rgba(203,27,40,.6) 0%, rgba($cor-preto-claro,.9) 64%);
+      color: $cor-branco;
       display: flex;
       flex-direction: column;
       font-family: Raleway Light;
@@ -30,11 +33,11 @@
           padding: 0 15px;
 
           .industrious-templated {
-            text-transform: uppercase;
             cursor: pointer;
+            text-transform: uppercase;
 
             &:hover {
-              color: white;
+              color: $cor-branco;
               transition: .5s;
             }
           }

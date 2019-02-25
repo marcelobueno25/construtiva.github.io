@@ -1,0 +1,11 @@
+@mixin subtitulo() {
+  font-size: 2.2em;
+  font-weight: normal;
+  padding: 60px 20px 0 20px;
+  text-transform: uppercase;
+}
+
+@mixin paragrafo() {
+  font-size: 1em;
+  padding: 30px 20px 50px 20px;
+}

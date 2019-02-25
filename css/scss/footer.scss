@@ -1,19 +1,21 @@
+@import './variaveis.scss';
+
 .rotape {
-  background-color: #111111;
-  padding: 50px 0;
+  background-color: $cor-preto-claro;
+  padding: 50px 20px;
 
   .rotape-lista {
     border-bottom: 1px;
-    border-color: #595959;
+    border-color: $cor-cinza-escuro;
     border-style: solid;
-    color: #868686;
+    color: $cor-cinza-claro;
     font-size: 1.05sem;
     line-height: 1.5em;
     padding-bottom: 40px;
 
     .rotape-item {
        .rotape-subtitulo {
-         color: white;
+         color: $cor-branco;
          font-weight: normal;
          font-size: 1.2em;
          padding: 20px 0;
@@ -23,16 +25,16 @@
   }
 
   .rotape-copyright {
-    text-align: center;
-    padding: 25px 0;
     font-size: .9em;
+    padding: 25px 0;
+    text-align: center;
   }
 }
 
 .rotape-lista-links {
   .rotape-link {
       border-bottom: 1px;
-      border-color: #595959;
+      border-color: $cor-cinza-escuro;
       border-style: solid;
       padding: 15px 0;
 
@@ -42,7 +44,7 @@
 
      .rotape-link-texto {
        &:hover {
-         color: #c10000;
+         color: $cor-red-escuro;
          transition: .5s;
        }
      }
@@ -53,14 +55,14 @@
   .rotape-rede-social-link {
 
     &:hover {
-      color: #c10000;
+      color: $cor-red-escuro;
       transition: .5s;
     }
 
     .rotape-rede-social-icone {
-      background: black;
+      background: $cor-preto;
       border-radius: 5px;
-      color: white;
+      color: $cor-branco;
       margin: 7px;
       padding: 10px 0;
       text-align: center;

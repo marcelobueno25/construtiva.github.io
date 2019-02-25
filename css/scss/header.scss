@@ -1,7 +1,9 @@
+@import './variaveis.scss';
+
 // Header Navbar
 .navbar {
     align-items: center;
-    background-color: black;
+    background-color: $cor-preto-claro;
     display: flex;
     font-size: 1em;
     font-style: none;
@@ -13,30 +15,36 @@
     width: 100%;
 
     .navbar-logo {
-      color: white;
+      color: $cor-branco;
       font-weight: 600;
     }
 
     .navbar-menu {
       cursor: pointer;
       font-weight: 600;
+      transition: 0.5s;
+
+      &:hover {
+        color: $cor-branco;
+      }
     }
 
     .sidebar-lista-links {
       .sidebar-link {
-        padding: 20px 0px;
         border-bottom: 1px;
-        border-color: #444444;
+        border-color: $cor-cinza-claro;
         border-style: solid;
+        padding: 20px 0px;
 
         &:last-child {
           border: 0;
         }
 
         .sidebar-link-texto {
+          transition: .5s;
+
           &:hover {
-            color: white;
-            transition: .5s;
+            color: $cor-branco;
           }
         }
       }
@@ -45,14 +53,14 @@
 
 
 .sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #111111;
-  width: 300px;
+  background-color: $cor-preto;
   height: 100%;
   padding: 20px 20px;
+  position: fixed;
+  top: 0;
   transition: 1s ease-in-out;
+  right: 0;
+  width: 300px;
 
   .btn-close {
     display: flex;
@@ -63,7 +71,7 @@
       font-size: 1.2em;
 
       &:hover {
-        color: white;
+        color: $cor-branco;
         transition: .5s;
       }
     }
