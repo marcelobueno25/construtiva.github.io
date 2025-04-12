@@ -2,7 +2,7 @@
 
 **Construtiva** é um site institucional responsivo voltado para empresas do setor de **construção civil** e **mercado imobiliário**. Este projeto foi customizado para transmitir solidez, inovação e profissionalismo, com foco na apresentação de serviços e depoimentos de clientes.
 
-🔗 Acesse o site online: [marcelobueno25.github.io/industrious.github.io](https://marcelobueno25.github.io/construtiva.github.io/)
+🔗 Acesse o site online: [marcelobueno25.github.io/construtiva.github.io](https://marcelobueno25.github.io/construtiva.github.io/)
 
 ---
 
