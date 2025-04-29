@@ -6,6 +6,12 @@
 
 ---
 
+## 📸 Capturas de tela
+
+![Screenshot do jogo](./screenshot.png) <!-- Altere ou adicione uma imagem do jogo se desejar -->
+
+---
+
 ## ✨ Funcionalidades
 
 - Layout totalmente responsivo
